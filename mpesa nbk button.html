@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mpesa and NBK buttons </title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+	
+	<style>
+		@import url(https://fonts.googleapis.com/css?family=Roboto:700);
+html, body{font-family : Roboto;}
+
+#holder{
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  background: white;
+  padding: 10px;
+  width: 250px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-65%);
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.25);
+  border-radius: 2px;
+}
+.button-pay {
+  background: #009a3e;
+  margin : 20px auto;
+  width : 200px;
+  height : 50px;
+  overflow: hidden;
+  text-align : center;
+  transition : .2s;
+  cursor : pointer;
+  border-radius: 3px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+}
+.nbk{
+	background: #fece01 !important;
+	color: #441203 !important;
+		
+}
+		.nbk P{
+			color: #441203 !important;
+		}
+		
+.btnTwo {
+  position : relative;
+  width : 200px;
+  height : 100px;
+  margin-top: -100px;
+  padding-top: 2px;
+ background: #00bf50;
+  left : -250px;
+  transition : .3s;
+}
+		.nbk-brown{
+			background: #441203 !important;
+			color:#fece01 !important;
+		}
+		
+		.nbk-brown P{
+			color:#fece01 !important;
+		}
+		
+		
+.btnText {
+  color : white;
+  transition : .3s;
+}
+.btnText2 {
+  margin-top : 63px;
+  margin-right : -130px;
+  color : #FFF;
+}
+.button-pay:hover .btnTwo{ /*When hovering over .button change .btnTwo*/
+  left: -130px;
+}
+.button-pay:hover .btnText{ /*When hovering over .button change .btnText*/
+  margin-left : 65px;
+}
+.button-pay:active { /*Clicked and held*/
+  box-shadow: 0px 5px 6px rgba(0,0,0,0.3);
+}
+		.mt-57{
+			margin-top: 57px !important;
+		}
+		
+		.mt-50{
+			margin-top: 50px !important;
+		}
+		
+	</style>
+
+<body>
+<div class="container">
+  <div class="row">
+	  
+<!--	  mpesa payment-->
+    <div class="button-container" >
+      <div class="button-pay" title="pay  for this bill using m-pesa">
+        <p class="btnText mb-0 d-flex justify-content-center align-items-center h-100">M-pesa</p>
+        <div class="btnTwo">
+          <p class="btnText2 mt-50"><img  height="50px"; src="img/mpesa-money.svg"></p>
+        </div>
+      </div>
+    </div>
+	  
+<!--	  nbk paying option-->
+	  
+	  <div class="button-container ml-3" title="generate Bill and pay via NBK">
+      <div class="button-pay nbk">
+        <p class="btnText mb-0 d-flex justify-content-center align-items-center h-100">Bank (NBK)</p>
+        <div class="btnTwo nbk-brown pb-3">
+          <p class="btnText2 mt-57"><img height="35px"; class="mb-5" src="img/NBK.png"></p>
+        </div>
+      </div>
+    </div>
+	  
+	  
+  </div>
+</div>
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+</body>
+</html>
